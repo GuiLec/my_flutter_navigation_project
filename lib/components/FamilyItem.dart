@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 class FamilyItem extends StatelessWidget {
   final String familyName;
+  final AssetImage familyImage;
 
-  const FamilyItem(this.familyName);
+  const FamilyItem(this.familyName, this.familyImage);
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +13,8 @@ class FamilyItem extends StatelessWidget {
         children: <Widget>[
           Image(
             height: 100,
-            image: AssetImage('lib/assets/images/lecallier.jpeg'),
+            width: 150,
+            image: familyImage,
           ),
           Text(familyName),
         ],
