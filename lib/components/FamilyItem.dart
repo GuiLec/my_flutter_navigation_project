@@ -1,12 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:my_flutter_navigation_project/modules/family/interface.dart';
 import 'package:my_flutter_navigation_project/pages/Family.dart';
-
-class FamilyData {
-  final String name;
-  final AssetImage familyImage;
-
-  FamilyData(this.name, this.familyImage);
-}
 
 class FamilyItem extends StatelessWidget {
   final FamilyData familyData;

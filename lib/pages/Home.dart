@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_flutter_navigation_project/components/FamilyItem.dart';
+import 'package:my_flutter_navigation_project/modules/family/interface.dart';
 
 List<FamilyData> family = [
   FamilyData('Mamoune', AssetImage('lib/assets/images/mamoune.png')),
