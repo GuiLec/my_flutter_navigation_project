@@ -17,8 +17,8 @@ class FamilyItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.push(
-            context, new MaterialPageRoute(builder: (context) => Family()));
+        Navigator.push(context,
+            new MaterialPageRoute(builder: (context) => Family(familyData)));
       },
       child: Row(
         children: <Widget>[
