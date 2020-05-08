@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_flutter_navigation_project/components/FamilyItem.dart';
 import 'package:my_flutter_navigation_project/pages/Family.dart';
 
 List<String> family = [
@@ -27,7 +28,7 @@ class Home extends StatelessWidget {
             itemCount: family.length,
             itemBuilder: (context, index) {
               return ListTile(
-                title: Text(family[index]),
+                title: FamilyItem(family[index]),
               );
             },
           ),
