@@ -8,7 +8,15 @@ class FamilyItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text('Family'),
+      child: Row(
+        children: <Widget>[
+          Image(
+            height: 100,
+            image: AssetImage('lib/assets/images/lecallier.jpeg'),
+          ),
+          Text(familyName),
+        ],
+      ),
     );
   }
 }
