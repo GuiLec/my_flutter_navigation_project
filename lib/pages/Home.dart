@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:my_flutter_navigation_project/components/FamilyItem.dart';
-import 'package:my_flutter_navigation_project/pages/Family.dart';
 
 class FamilyData {
   final String name;
@@ -28,10 +27,7 @@ class Home extends StatelessWidget {
         title: Text('La famille Bonnet'),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(
-              context, new MaterialPageRoute(builder: (context) => Family()));
-        },
+        onPressed: () {},
       ),
       body: Container(
         child: Center(
