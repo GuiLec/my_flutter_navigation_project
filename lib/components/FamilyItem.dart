@@ -17,28 +17,34 @@ class FamilyItem extends StatelessWidget {
       },
       child: Row(
         children: <Widget>[
-          Image(
-            height: 100,
-            width: 150,
-            image: familyData.familyImage,
+          Container(
+            color: Colors.grey[200],
+            child: Image(
+              height: 100,
+              width: 130,
+              image: familyData.familyImage,
+            ),
           ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 10),
-                child: Text(
-                  familyData.name,
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 10),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Padding(
+                  padding: EdgeInsets.symmetric(vertical: 10),
+                  child: Text(
+                    familyData.name,
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  ),
                 ),
-              ),
-              Row(
-                children: familyData.familyMembers
-                    .map((member) => Miniature(member.memberImage,
-                        member.generation == Generation.GRAND_CHILDREN))
-                    .toList(),
-              )
-            ],
+                Row(
+                  children: familyData.familyMembers
+                      .map((member) => Miniature(member.memberImage,
+                          member.generation == Generation.GRAND_CHILDREN))
+                      .toList(),
+                )
+              ],
+            ),
           ),
         ],
       ),
