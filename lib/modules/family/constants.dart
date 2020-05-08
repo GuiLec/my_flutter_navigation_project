@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_flutter_navigation_project/modules/family/interface.dart';
 
 List<FamilyData> family = [
-  FamilyData('Mamoune', AssetImage('lib/assets/images/mamoune.png')),
+  FamilyData('Mamoune', AssetImage('lib/assets/images/mamoune.png'), []),
   FamilyData(
       'Grands Bonnet ("Yéyé")',
       AssetImage('lib/assets/images/gd_bonnet.png'),
@@ -16,7 +16,7 @@ List<FamilyData> family = [
     thibaut,
     josephine
   ]),
-  FamilyData('Hélène', AssetImage('lib/assets/images/helene.jpg')),
+  FamilyData('Hélène', AssetImage('lib/assets/images/helene.jpg'), []),
   FamilyData('Réquillart', AssetImage('lib/assets/images/requillart.png'),
       [philippe, delphine, joseph, louis, margueritte, theodore]),
   FamilyData(
