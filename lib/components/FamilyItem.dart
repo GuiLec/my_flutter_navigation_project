@@ -32,7 +32,11 @@ class FamilyItem extends StatelessWidget {
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
               ),
-              Miniature(familyData.familyImage)
+              Row(
+                children: familyData.familyMembers
+                    .map((member) => Miniature(member.memberImage))
+                    .toList(),
+              )
             ],
           ),
         ],

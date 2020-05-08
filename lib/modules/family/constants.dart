@@ -25,53 +25,53 @@ List<FamilyData> family = [
       [henri, annaig, pierre, marie, baptiste, clemence]),
 ];
 
-FamilyMember jeremie =
-    FamilyMember('Jérémie', AssetImage('lib/assets/images/jeremie.png'));
-FamilyMember charlotte =
-    FamilyMember('Charlotte', AssetImage('lib/assets/images/charlotte.png'));
-FamilyMember claire =
-    FamilyMember('Claire', AssetImage('lib/assets/images/claire.png'));
-FamilyMember laure =
-    FamilyMember('Laure', AssetImage('lib/assets/images/laure.png'));
-FamilyMember cyprien =
-    FamilyMember('Cyprien', AssetImage('lib/assets/images/cyprien.png'));
-FamilyMember guillaume =
-    FamilyMember('Guillaume', AssetImage('lib/assets/images/guillaume.png'));
-FamilyMember tristan =
-    FamilyMember('Tristan', AssetImage('lib/assets/images/tristan.png'));
-FamilyMember thibaut =
-    FamilyMember('Thibaut', AssetImage('lib/assets/images/thibaut.png'));
-FamilyMember josephine =
-    FamilyMember('Joséphine', AssetImage('lib/assets/images/josephine.png'));
-FamilyMember joseph =
-    FamilyMember('Joseph', AssetImage('lib/assets/images/joseph.png'));
-FamilyMember louis =
-    FamilyMember('Louis', AssetImage('lib/assets/images/louis.png'));
-FamilyMember pierre =
-    FamilyMember('Pierre', AssetImage('lib/assets/images/pierre.png'));
-FamilyMember theodore =
-    FamilyMember('Théodore', AssetImage('lib/assets/images/theodore.png'));
-FamilyMember margueritte = FamilyMember(
-    'Margueritte', AssetImage('lib/assets/images/margueritte.png'));
-FamilyMember baptiste =
-    FamilyMember('Baptiste', AssetImage('lib/assets/images/baptiste.png'));
-FamilyMember marie =
-    FamilyMember('Marie', AssetImage('lib/assets/images/marie.png'));
-FamilyMember clemence =
-    FamilyMember('Clémence', AssetImage('lib/assets/images/clemence.png'));
-FamilyMember thierry =
-    FamilyMember('Thierry', AssetImage('lib/assets/images/thierry.png'));
-FamilyMember marieAntoinette = FamilyMember(
-    'Marie-Antoinette', AssetImage('lib/assets/images/marie_antoinette.png'));
-FamilyMember henri =
-    FamilyMember('Henri', AssetImage('lib/assets/images/henri.png'));
-FamilyMember annaig =
-    FamilyMember('Annaïg', AssetImage('lib/assets/images/annaig.png'));
-FamilyMember philippe =
-    FamilyMember('Philipppe', AssetImage('lib/assets/images/philippe.png'));
-FamilyMember delphine =
-    FamilyMember('Delphine', AssetImage('lib/assets/images/delphine.png'));
-FamilyMember anne =
-    FamilyMember('Anne', AssetImage('lib/assets/images/anne.png'));
-FamilyMember olivier =
-    FamilyMember('Olivier', AssetImage('lib/assets/images/olivier.png'));
+FamilyMember jeremie = FamilyMember('Jérémie',
+    AssetImage('lib/assets/images/jeremie.png'), Generation.GRAND_CHILDREN);
+FamilyMember charlotte = FamilyMember('Charlotte',
+    AssetImage('lib/assets/images/charlotte.png'), Generation.GRAND_CHILDREN);
+FamilyMember claire = FamilyMember('Claire',
+    AssetImage('lib/assets/images/claire.png'), Generation.GRAND_CHILDREN);
+FamilyMember laure = FamilyMember('Laure',
+    AssetImage('lib/assets/images/laure.png'), Generation.GRAND_CHILDREN);
+FamilyMember cyprien = FamilyMember('Cyprien',
+    AssetImage('lib/assets/images/cyprien.png'), Generation.GRAND_CHILDREN);
+FamilyMember guillaume = FamilyMember('Guillaume',
+    AssetImage('lib/assets/images/guillaume.png'), Generation.GRAND_CHILDREN);
+FamilyMember tristan = FamilyMember('Tristan',
+    AssetImage('lib/assets/images/tristan.png'), Generation.GRAND_CHILDREN);
+FamilyMember thibaut = FamilyMember('Thibaut',
+    AssetImage('lib/assets/images/thibaut.png'), Generation.GRAND_CHILDREN);
+FamilyMember josephine = FamilyMember('Joséphine',
+    AssetImage('lib/assets/images/josephine.png'), Generation.GRAND_CHILDREN);
+FamilyMember joseph = FamilyMember('Joseph',
+    AssetImage('lib/assets/images/joseph.png'), Generation.GRAND_CHILDREN);
+FamilyMember louis = FamilyMember('Louis',
+    AssetImage('lib/assets/images/louis.png'), Generation.GRAND_CHILDREN);
+FamilyMember pierre = FamilyMember('Pierre',
+    AssetImage('lib/assets/images/pierre.png'), Generation.GRAND_CHILDREN);
+FamilyMember theodore = FamilyMember('Théodore',
+    AssetImage('lib/assets/images/theodore.png'), Generation.GRAND_CHILDREN);
+FamilyMember margueritte = FamilyMember('Margueritte',
+    AssetImage('lib/assets/images/margueritte.png'), Generation.GRAND_CHILDREN);
+FamilyMember baptiste = FamilyMember('Baptiste',
+    AssetImage('lib/assets/images/baptiste.png'), Generation.GRAND_CHILDREN);
+FamilyMember marie = FamilyMember('Marie',
+    AssetImage('lib/assets/images/marie.png'), Generation.GRAND_CHILDREN);
+FamilyMember clemence = FamilyMember('Clémence',
+    AssetImage('lib/assets/images/clemence.png'), Generation.GRAND_CHILDREN);
+FamilyMember thierry = FamilyMember('Thierry',
+    AssetImage('lib/assets/images/thierry.png'), Generation.CHILDREN);
+FamilyMember marieAntoinette = FamilyMember('Marie-Antoinette',
+    AssetImage('lib/assets/images/marie_antoinette.png'), Generation.CHILDREN);
+FamilyMember henri = FamilyMember(
+    'Henri', AssetImage('lib/assets/images/henri.png'), Generation.CHILDREN);
+FamilyMember annaig = FamilyMember(
+    'Annaïg', AssetImage('lib/assets/images/annaig.png'), Generation.CHILDREN);
+FamilyMember philippe = FamilyMember('Philipppe',
+    AssetImage('lib/assets/images/philippe.png'), Generation.CHILDREN);
+FamilyMember delphine = FamilyMember('Delphine',
+    AssetImage('lib/assets/images/delphine.png'), Generation.CHILDREN);
+FamilyMember anne = FamilyMember(
+    'Anne', AssetImage('lib/assets/images/anne.png'), Generation.CHILDREN);
+FamilyMember olivier = FamilyMember('Olivier',
+    AssetImage('lib/assets/images/olivier.png'), Generation.CHILDREN);

@@ -11,6 +11,9 @@ class FamilyData {
 class FamilyMember {
   final String name;
   final AssetImage memberImage;
+  final Generation generation;
 
-  FamilyMember(this.name, this.memberImage);
+  FamilyMember(this.name, this.memberImage, this.generation);
 }
+
+enum Generation { DOYEN, CHILDREN, GRAND_CHILDREN }
