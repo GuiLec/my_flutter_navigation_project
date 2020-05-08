@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_flutter_navigation_project/pages/Family.dart';
 
 class FamilyItem extends StatelessWidget {
   final String familyName;
@@ -8,7 +9,11 @@ class FamilyItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return InkWell(
+      onTap: () {
+        Navigator.push(
+            context, new MaterialPageRoute(builder: (context) => Family()));
+      },
       child: Row(
         children: <Widget>[
           Image(
