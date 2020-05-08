@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:my_flutter_navigation_project/pages/Family.dart';
 
-class FamilyItem extends StatelessWidget {
-  final String familyName;
+class FamilyData {
+  final String name;
   final AssetImage familyImage;
 
-  const FamilyItem(this.familyName, this.familyImage);
+  FamilyData(this.name, this.familyImage);
+}
+
+class FamilyItem extends StatelessWidget {
+  final FamilyData familyData;
+
+  const FamilyItem(this.familyData);
 
   @override
   Widget build(BuildContext context) {
@@ -19,9 +25,9 @@ class FamilyItem extends StatelessWidget {
           Image(
             height: 100,
             width: 150,
-            image: familyImage,
+            image: familyData.familyImage,
           ),
-          Text(familyName),
+          Text(familyData.name),
         ],
       ),
     );

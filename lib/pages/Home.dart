@@ -1,13 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_flutter_navigation_project/components/FamilyItem.dart';
 
-class FamilyData {
-  final String name;
-  final AssetImage familyImage;
-
-  FamilyData(this.name, this.familyImage);
-}
-
 List<FamilyData> family = [
   FamilyData('Mamoune', AssetImage('lib/assets/images/mamoune.png')),
   FamilyData(
@@ -35,8 +28,7 @@ class Home extends StatelessWidget {
             itemCount: family.length,
             itemBuilder: (context, index) {
               return ListTile(
-                title:
-                    FamilyItem(family[index].name, family[index].familyImage),
+                title: FamilyItem(family[index]),
               );
             },
           ),
