@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_flutter_navigation_project/components/Miniature.dart';
 import 'package:my_flutter_navigation_project/modules/family/interface.dart';
 import 'package:my_flutter_navigation_project/pages/Family.dart';
+import 'package:my_flutter_navigation_project/pages/FamilyMemberPage.dart';
 
 class FamilyItem extends StatelessWidget {
   final FamilyData familyData;
@@ -39,9 +40,20 @@ class FamilyItem extends StatelessWidget {
                 ),
                 Row(
                   children: familyData.familyMembers
-                      .map((member) => Miniature(member.memberImage,
+                      .map(
+                        (member) => Miniature(
+                          member.memberImage,
                           isSmall:
-                              member.generation == Generation.GRAND_CHILDREN))
+                              member.generation == Generation.GRAND_CHILDREN,
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                new MaterialPageRoute(
+                                    builder: (context) =>
+                                        FamilyMemberPage(member)));
+                          },
+                        ),
+                      )
                       .toList(),
                 )
               ],

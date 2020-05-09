@@ -20,6 +20,9 @@ class Miniature extends StatelessWidget {
           image: image,
         ),
       ),
+      child: InkWell(
+        onTap: onTap,
+      ),
     );
   }
 }
