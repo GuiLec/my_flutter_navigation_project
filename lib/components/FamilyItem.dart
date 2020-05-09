@@ -40,7 +40,8 @@ class FamilyItem extends StatelessWidget {
                 Row(
                   children: familyData.familyMembers
                       .map((member) => Miniature(member.memberImage,
-                          member.generation == Generation.GRAND_CHILDREN))
+                          isSmall:
+                              member.generation == Generation.GRAND_CHILDREN))
                       .toList(),
                 )
               ],

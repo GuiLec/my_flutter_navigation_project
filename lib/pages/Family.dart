@@ -44,7 +44,8 @@ class Family extends StatelessWidget {
                     padding: EdgeInsets.all(10),
                     child: Row(
                       children: <Widget>[
-                        Miniature(familyMembers[index].memberImage, false),
+                        Miniature(familyMembers[index].memberImage,
+                            isSmall: false),
                         Text(familyMembers[index].name),
                       ],
                     ),

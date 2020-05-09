@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 
 class Miniature extends StatelessWidget {
   final AssetImage image;
+  final void Function() onTap;
   final bool isSmall;
 
-  const Miniature(this.image, [this.isSmall]);
+  const Miniature(this.image, {this.onTap, this.isSmall});
 
   @override
   Widget build(BuildContext context) {
