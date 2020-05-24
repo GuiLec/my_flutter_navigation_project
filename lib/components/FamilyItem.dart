@@ -11,6 +11,7 @@ class FamilyItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double familyItemBorderRadius = 10;
     return InkWell(
       onTap: () {
         Navigator.push(context,
@@ -18,7 +19,7 @@ class FamilyItem extends StatelessWidget {
       },
       child: Container(
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(familyItemBorderRadius),
             color: Colors.blue[50],
             border: Border.all(width: 1.0, color: Colors.blue)),
         child: Row(
@@ -28,8 +29,9 @@ class FamilyItem extends StatelessWidget {
               width: 130,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(10),
-                    bottomLeft: Radius.circular(10)),
+                  topLeft: Radius.circular(familyItemBorderRadius),
+                  bottomLeft: Radius.circular(familyItemBorderRadius),
+                ),
                 image: DecorationImage(
                   image: familyData.familyImage,
                   fit: BoxFit.fill,
