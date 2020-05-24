@@ -18,17 +18,22 @@ class FamilyItem extends StatelessWidget {
       },
       child: Container(
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
-          color: Colors.cyan[200],
-        ),
+            borderRadius: BorderRadius.circular(10),
+            color: Colors.blue[50],
+            border: Border.all(width: 1.0, color: Colors.blue)),
         child: Row(
           children: <Widget>[
             Container(
-              child: Image(
-                fit: BoxFit.fill,
-                height: 100,
-                width: 130,
-                image: familyData.familyImage,
+              height: 100,
+              width: 130,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(10),
+                    bottomLeft: Radius.circular(10)),
+                image: DecorationImage(
+                  image: familyData.familyImage,
+                  fit: BoxFit.fill,
+                ),
               ),
             ),
             Padding(
